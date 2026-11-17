@@ -12,7 +12,7 @@ env:
 jobs:
   lint-sql:
     name: Lint SQL Files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout code
@@ -35,7 +35,7 @@ jobs:
 
   lint-python:
     name: Lint Python Files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout code
@@ -56,7 +56,7 @@ jobs:
 
   dbt-compile:
     name: Compile DBT Models
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [lint-sql, lint-python]
 
     steps:
@@ -92,7 +92,7 @@ jobs:
 
   generate-docs:
     name: Generate DBT Documentation
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: dbt-compile
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
 
