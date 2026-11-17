@@ -1,7 +1,7 @@
-# DBT and Airflow Data Pipeline Project
+# DBT + Airflow + SQL Server DataOps Project
 
-![DBT CI](https://github.com/lqhoa171/dbt-airflow-dataops/workflows/DBT%20CI%20Pipeline/badge.svg)
-![Python Quality](https://github.com/lqhoa171/dbt-airflow-dataops/workflows/Python%20Code%20Quality/badge.svg)
+![DBT CI](https://github.com/Wan172005/dbt-airflow-dataops/workflows/DBT%20CI%20Pipeline/badge.svg)
+![Python Quality](https://github.com/Wan172005/dbt-airflow-dataops/workflows/Python%20Code%20Quality/badge.svg)
 
 ## 👋 Welcome!
 
@@ -26,7 +26,7 @@
 
 ## Project Overview
 
-**📌 Operating System:**  
+**📌 Operating System:**
 This project is documented for **Windows 10/11 only**. All core functionality uses Docker Desktop (WSL2 backend), and all commands are run in **PowerShell**. SQL Server is queried with the **SQL Server (mssql) extension** for VS Code.
 
 This project implements an automated data transformation pipeline using DBT (Data Build Tool) and Apache Airflow. The pipeline extracts data from SQL Server, transforms it using DBT models, and loads it into a target database, following modern data engineering best practices.
