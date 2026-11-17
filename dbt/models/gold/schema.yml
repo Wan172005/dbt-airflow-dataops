@@ -49,4 +49,3 @@ models:
         description: "Unique customer identifier"
       - name: lifetime_value
         description: "Total revenue from customer"
-
